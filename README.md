@@ -1,3 +1,7 @@
+# [Ecole du Web](https://www.ecole-du-web.net/) - Créer un 3 sites - Gym Yonos
+
+Project of the course "Code 3 sites from A to Z"
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
