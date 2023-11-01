@@ -9,18 +9,17 @@ export default function Header({dimension} : HeaderProps) {
   const headerRef = useRef<HTMLElement>(null);
 
   const scrollHeader = () => {
+    console.log(window.scrollY)
+    console.log(window.innerHeight)
     const header = headerRef.current;
-    const navigation = header!.children[0].children[0] as HTMLUListElement;
     if(header) {
-      if(window.scrollY > 50) {
+      if(window.innerHeight - window.scrollY < window.innerHeight) {
         header.style.background = `var(--main-black)`;
-        navigation.style.background = `var(--main-black)`;
-        navigation.style.borderBottom = `2px solid var(--main-white)`;
+        header.style.borderBottom = `2px solid var(--main-white)`;
       }
-      else if(window.scrollY === 0) {
+      else if(window.innerHeight - window.scrollY === window.innerHeight) {
         header.style.background = `transparent`;
-        navigation.style.background = `transparent`;
-        navigation.style.borderBottom = `none`;
+        header.style.borderBottom = `none`;
       }
     } 
   }

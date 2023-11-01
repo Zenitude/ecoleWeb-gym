@@ -103,6 +103,7 @@ export const HomeContainer = styled.main`
 
     section:nth-of-type(2) {
         padding: 40px 10px;
+        width: 100%;
 
         h2 {
             margin-bottom: 40px;
@@ -116,14 +117,15 @@ export const HomeContainer = styled.main`
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
+            width: 100%;
             max-width: 940px;
-            min-width: 260px;
+            min-width: 240px;
         }
 
         img {
             width: 30%;
             max-width: 800px;
-            min-width: 260px;
+            min-width: 240px;
             min-height: 340px;
             object-fit: cover;
             object-position: 60% 10%;
