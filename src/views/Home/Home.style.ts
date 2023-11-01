@@ -28,7 +28,7 @@ export const HomeContainer = styled.main`
             width: 100%;
             max-width: 450px;
             min-width: 240px;
-            min-height: 625px;
+            height: 625px;
             box-shadow: 0 0 10px var(--main-black);
 
             div {
@@ -41,7 +41,7 @@ export const HomeContainer = styled.main`
             object-fit: cover;
         }
 
-        div {
+        div:not(.cards) {
             display: flex;
             flex-direction: column;
         }
