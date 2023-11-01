@@ -1,25 +1,7 @@
 import { HeroContainer } from "./Hero.style";
+import { HeroProps } from "../../utils/types/types";
 
-type PropsHero = {
-    children: React.ReactNode;
-    title: string;
-    subtitles?: {
-        balise: number;
-        txt: string;
-    }[];
-    paragraphs?: {
-        txt: string;
-    }[];
-    links?: {
-        txt: string;
-        href: string;
-    }[];
-    buttons?: {
-        txt: string;
-    }[]
-}
-
-export default function Hero({children, title, subtitles, paragraphs, links, buttons} : PropsHero) {
+export default function Hero({children, title, subtitles, paragraphs, links, buttons} : HeroProps) {
   return (
     <HeroContainer>
         {children}

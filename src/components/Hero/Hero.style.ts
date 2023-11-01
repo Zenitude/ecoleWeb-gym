@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import bgImage from '../../assets/gym-accueil.jpg';
+import { bgImage } from "../../assets";
 
 export const HeroContainer = styled.div`
     height: 500px;
+    padding-bottom: 20px;
     background: var(--linear-hero), url(${bgImage}) no-repeat top right ;
     background-position: 72% 10%;
     color: var(--main-white);
@@ -11,7 +12,7 @@ export const HeroContainer = styled.div`
         margin: 100px 10px 20px;
         font-weight: normal;
         text-transform: uppercase;
-        font-size: calc(2.2rem + 1.7vw);
+        font-size: calc(2.1rem + 1.7vw);
     }
 
     p {

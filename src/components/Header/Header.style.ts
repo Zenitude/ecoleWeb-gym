@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
     height: 70px;
     position: fixed;
     top: 0;
+    z-index: 10;
 
     .menu {
         position: absolute;
@@ -16,6 +17,11 @@ export const HeaderContainer = styled.header`
         border: none;
         cursor: pointer;
         color: var(--main-white);
+
+        img {
+            width: 80%;
+            color: var(--main-white);
+        }
     }
 `;
 
