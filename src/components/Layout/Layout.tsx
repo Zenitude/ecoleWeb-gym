@@ -12,7 +12,7 @@ export default function Layout() {
     const [ dimension ] = useDimension();
     
     return (
-    <LayoutContainer>
+    <LayoutContainer id="home">
         { hero
             ? (
                 <Hero title={dataHero.title} subtitles={dataHero.subtitles} paragraphs={dataHero.paragraphs} links={dataHero.links} buttons={dataHero.buttons}>

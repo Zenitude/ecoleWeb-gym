@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     font-family: var(--font-text);
     background-color: var(--bg-white);
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
