@@ -1,18 +1,21 @@
 import { HomeContainer } from "./Home.style";
 import Card from "../../components/Card/Card";
 import Field from "../../components/Field/Field";
-import { info1, info2, info3, equip1, equip2, equip3, equip4, equip5, equip6, equip7, equip8, equip9, check, cross } from "../../assets";
+import { info1, info2, info3, equip1, equip2, equip3, equip4, equip5, equip6, equip7, equip8, equip9, check, cross, points } from "../../assets";
 import { prices } from "../../utils/datas/price";
+import useDimension from "../../utils/hooks/useDimension";
 
 export default function Home() {
   const equipments = [equip1, equip2, equip3, equip4, equip5, equip6, equip7, equip8, equip9];
-  
+  const [ dimension ] = useDimension();
+
   return (
     <HomeContainer>
 
         <section>
           <h2>Se (re)prendre en main</h2>
           <div className="cards">
+            {dimension > 1650 && <img src={points} alt="" className="points" /> }
             <Card srcImg={info1} typeTitle={3} title={"Faire parti d'un groupe"} txt={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat odit, adipisci officia dolore ad ex."}/>
             <Card srcImg={info2} typeTitle={3} title={"Atteindre ses objectifs"} txt={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat odit, adipisci officia dolore ad ex."}/>
             <Card srcImg={info3} typeTitle={3} title={"Exploser ses limites"} txt={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat odit, adipisci officia dolore ad ex."}/>

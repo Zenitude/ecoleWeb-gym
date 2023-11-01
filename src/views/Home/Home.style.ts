@@ -11,7 +11,7 @@ export const HomeContainer = styled.main`
             font-size: 32px;
             text-align: center;
             font-weight: 500;
-            margin-bottom: 40px;
+            margin-bottom: 80px;
         }
 
         .cards {
@@ -20,6 +20,18 @@ export const HomeContainer = styled.main`
             justify-content: center;
             flex-wrap: wrap;
             gap: 30px;
+            width: 100%;
+            max-width: 1420px;
+            min-width: 260px;
+            margin-inline: auto ;
+            position: relative;
+
+            .points {
+                position: absolute;
+                top: -70px;
+                left: -90px;
+                z-index: 0;
+            }
         }
 
         article {
@@ -30,6 +42,7 @@ export const HomeContainer = styled.main`
             min-width: 240px;
             height: 625px;
             box-shadow: 0 0 10px var(--main-black);
+            z-index: 2;
 
             div {
                 padding: 20px 10px;
@@ -58,6 +71,7 @@ export const HomeContainer = styled.main`
             line-height: 1.5;
             font-size: 20px;
         }
+
     }
 
     #section2 {
