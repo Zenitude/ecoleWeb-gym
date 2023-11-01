@@ -115,9 +115,11 @@ export const HomeContainer = styled.main`
         .images {
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             gap: 20px;
             width: 100%;
+            margin: 0 auto;
             max-width: 940px;
             min-width: 240px;
         }
