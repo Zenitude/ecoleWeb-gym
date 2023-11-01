@@ -145,6 +145,42 @@ export const HomeContainer = styled.main`
             min-height: 340px;
             object-fit: cover;
             object-position: 60% 10%;
+            cursor: pointer;
+        }
+
+        dialog {
+            max-width: 650px;
+            min-width: 240px;
+            height: 450px;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid var(--main-white);
+            border-radius: 5px;
+
+            &::backdrop {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            button {
+                z-index: 2;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 50px;
+                height: 50px;
+                border: 2px solid var(--main-black);
+                border-radius: 15px;
+                background: transparent;
+                backdrop-filter: blur(8px);
+                color: var(--main-white);
+                font-size: 2rem;
+            }
         }
     }
 

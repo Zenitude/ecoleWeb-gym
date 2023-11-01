@@ -1,13 +1,18 @@
+import { useState } from "react";
 import { HomeContainer } from "./Home.style";
 import Card from "../../components/Card/Card";
 import Field from "../../components/Field/Field";
-import { info1, info2, info3, equip1, equip2, equip3, equip4, equip5, equip6, equip7, equip8, equip9, check, cross, points } from "../../assets";
+import Modal from "../../components/Modal/Modal";
+import { info1, info2, info3, check, cross, points } from "../../assets";
 import { prices } from "../../utils/datas/price";
 import useDimension from "../../utils/hooks/useDimension";
+import { equipments } from "../../utils/datas/equipments";
 
 export default function Home() {
-  const equipments = [equip1, equip2, equip3, equip4, equip5, equip6, equip7, equip8, equip9];
+  
   const [ dimension ] = useDimension();
+  const [ showModal, setShowModal ] = useState(false);
+  const [ infosImg, setInfosImg ] = useState(equipments[0])
 
   return (
     <HomeContainer>
@@ -28,11 +33,15 @@ export default function Home() {
         </div>
 
         <section id="equipment">
+          <Modal show={showModal} setShow={setShowModal} datasImg={infosImg}/>
           <h2>Les équipements</h2>
           <div className="images">
             {
               equipments.map((equipment, index) => (
-                <img key={index} src={equipment} alt={"equipment"} />
+                  <img key={index} src={equipment.src} alt={equipment.alt} onClick={() => {
+                    setInfosImg(equipments[index]);
+                    setShowModal(true);
+                  }}/>
               ))
             }
           </div>

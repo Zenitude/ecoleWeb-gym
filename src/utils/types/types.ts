@@ -27,3 +27,12 @@ export type HeroProps = {
         txt: string;
     }[]
 }
+
+export type ModalProps = {
+    show: boolean;
+    setShow: React.Dispatch<React.SetStateAction<boolean>>;
+    datasImg: {
+        src: string;
+        alt: string;
+    }
+}

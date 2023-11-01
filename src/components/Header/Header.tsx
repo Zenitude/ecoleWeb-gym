@@ -9,8 +9,6 @@ export default function Header({dimension} : HeaderProps) {
   const headerRef = useRef<HTMLElement>(null);
 
   const scrollHeader = () => {
-    console.log(window.scrollY)
-    console.log(window.innerHeight)
     const header = headerRef.current;
     if(header) {
       if(window.innerHeight - window.scrollY < window.innerHeight) {
