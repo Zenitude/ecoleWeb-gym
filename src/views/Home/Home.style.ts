@@ -102,7 +102,7 @@ export const HomeContainer = styled.main`
     }
 
     section:nth-of-type(2) {
-        padding: 40px 10px;
+        padding: 80px 10px;
         width: 100%;
 
         h2 {
@@ -153,7 +153,7 @@ export const HomeContainer = styled.main`
     }
 
     section:nth-of-type(4) {
-        padding: 40px 10px;
+        padding: 80px 10px;
 
         h2 {
             margin-bottom: 40px;
@@ -227,7 +227,7 @@ export const HomeContainer = styled.main`
     }
 
     section:last-of-type {
-        padding: 40px 10px;
+        padding: 80px 10px;
         border-top: 1px dashed var(--main-black);
         border-bottom: 1px dashed var(--main-black);
 
